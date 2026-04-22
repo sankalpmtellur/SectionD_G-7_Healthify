@@ -3,9 +3,8 @@
 ## Slide 1 – Title
 - Project Title: Predicting and Reducing 30-Day Hospital Readmissions
 - Sector: Healthcare Analytics
-- Team ID: [Add Team ID]
-- Team Members: [Add Team Members]
-- Faculty Mentor: [Add Faculty Mentor]
+- Team Members
+- Faculty Mentor
 
 ## Slide 2 – Context & Problem Statement
 - Unplanned 30-day hospital readmissions drive massive financial penalties and reflect systemic gaps in care transition.
