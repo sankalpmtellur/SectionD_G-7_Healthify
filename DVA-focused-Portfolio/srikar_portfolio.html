@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srikar | Data Visualization & Analytics</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin:0;
+    background:#0b0f17;
+    color:#e5e7eb;
+    font-family:Inter;
+}
+section {
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
+h1,h2,h3 { font-family:"Space Grotesk"; }
+.accent { color:#38bdf8; }
+
+.hero {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.btn {
+    padding:10px 18px;
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+    margin-right:10px;
+    text-decoration:none;
+    border-radius:6px;
+}
+.btn:hover {
+    background:#38bdf8;
+    color:black;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.card {
+    background:#111827;
+    border:1px solid #1f2937;
+    padding:20px;
+    border-radius:10px;
+}
+
+.tag {
+    font-size:12px;
+    color:#9ca3af;
+    margin-right:6px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Balanagu Sesha <span class="accent">Srikar</span></h1>
+
+    <p class="accent">
+        Data Visualization & Analytics · ETL Engineering · Business Intelligence
+    </p>
+
+    <p id="typewriter"></p>
+
+    <div>
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="mailto:balanagu.srikar2024@nst.rishihood.edu.in" class="btn">Contact</a>
+    </div>
+</section>
+
+<!-- SUMMARY -->
+<section>
+    <h2>Summary</h2>
+    <p>
+        Aspiring Data Visualization & Analytics professional with hands-on experience in Python ETL pipelines,
+        KPI engineering, exploratory data analysis, and dashboard development.
+    </p>
+    <p>
+        Skilled at converting raw datasets into decision-oriented business intelligence across analytics
+        and system-driven applications.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+        <!-- Project 1 -->
+        <div class="card">
+            <h3>Inventory Management System | Analytics & KPI Dashboard</h3>
+
+            <p>
+                Built a full-stack inventory management system enabling real-time tracking of stock levels,
+                product entries, and supply chain updates across multiple categories.
+            </p>
+
+            <p>
+                Designed structured data workflows and dashboards for inventory status, low-stock alerts,
+                and product-level operations, supporting decision-making through search, filtering,
+                and reporting features.
+            </p>
+
+            <div>
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">Google Sheets</span>
+                <span class="tag">KPI Design</span>
+                <span class="tag">Risk Analytics</span>
+                <span class="tag">Dashboarding</span>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <h3>Healthify | Health & Wellness Analytics Platform</h3>
+
+            <p>
+                Developed a health and wellness analytics platform enabling users to track fitness goals,
+                diet plans, and well-being metrics through an intuitive interface.
+            </p>
+
+            <p>
+                Designed backend-supported data workflows and built modular dashboards for health tracking,
+                personalised summaries, and weekly activity insights using statistical analysis techniques.
+            </p>
+
+            <div>
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Tableau Public</span>
+                <span class="tag">EDA</span>
+                <span class="tag">KPI Engineering</span>
+                <span class="tag">Statistical Analysis</span>
+                <span class="tag">Dashboard Design</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Technical Skills</h2>
+
+    <p><b>Analysis & ETL:</b> Python, Pandas, NumPy, SciPy, Statsmodels, Google Sheets, Excel</p>
+    <p><b>Visualization:</b> Tableau Public, Matplotlib, Seaborn, Plotly</p>
+    <p><b>Statistical:</b> EDA, Hypothesis Testing, Regression, Segmentation & Clustering, Correlation Analysis</p>
+    <p><b>Tools:</b> Jupyter Notebook, Google Colab, GitHub, VS Code</p>
+    <p><b>Domains:</b> Risk Analytics, Financial Data Analysis, Food & Delivery Analytics</p>
+</section>
+
+<!-- COMPETENCIES -->
+<section>
+    <h2>Key Competencies</h2>
+
+    <p>
+        ETL Pipeline Design · KPI Framework Engineering · Interactive Dashboard Development ·
+        Statistical Hypothesis Testing · Risk Segmentation · Scenario Analysis ·
+        Decision-Oriented Reporting · GitHub Version Control
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact</h2>
+
+    <p>Email: balanagu.srikar2024@nst.rishihood.edu.in</p>
+
+    <a href="#" class="btn">GitHub</a>
+    <a href="#" class="btn">LinkedIn</a>
+</section>
+
+<script>
+const lines = [
+"Turning raw datasets into decision-oriented insights.",
+"Building ETL pipelines, KPI frameworks, and dashboards.",
+"Focused on data-driven problem solving and analytics."
+];
+
+let i=0, j=0, deleting=false;
+const target=document.getElementById("typewriter");
+
+function type(){
+    let text=lines[i];
+    if(!deleting){
+        target.innerText=text.substring(0,j++);
+        if(j>text.length){ deleting=true; setTimeout(type,1500); return; }
+    } else {
+        target.innerText=text.substring(0,j--);
+        if(j==0){ deleting=false; i=(i+1)%lines.length; }
+    }
+    setTimeout(type, deleting?20:40);
+}
+type();
+</script>
+
+</body>
+</html>
