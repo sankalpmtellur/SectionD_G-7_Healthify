@@ -6,7 +6,7 @@
 | ------------- | ---------------------------------------------- |
 | Dataset name  | Hospital Readmission Dataset                   |
 | Source        | Simulated healthcare dataset (project dataset) |
-| Raw file name | hospital_readmissions_30k.csv                  |
+| Raw file name | hospital_readmissions.csv                  |
 | Last updated  | April 2026                                     |
 | Granularity   | One row per patient admission                  |
 
