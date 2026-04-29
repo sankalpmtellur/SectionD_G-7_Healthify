@@ -215,25 +215,47 @@ WHO is at risk?      WHY readmitted?      WHERE to improve?
 healthify/
 │
 ├── data/
-│   ├── cleaned_data.csv
-│   ├── age_kpi.csv
-│   ├── risk_kpi.csv
-│   ├── condition_kpi.csv
-│   ├── stay_kpi.csv
-│   └── discharge_kpi.csv
+│   ├── processed/
+│   │   ├── cleaned_data.csv
+│   │   └── healthcare.ipynb
+│   │
+│   ├── raw/
+│   │   └── hospital_readmissions_30k.csv
+│   │
+├── docs/
+│   ├── data_dictionary.md
 │
 ├── notebooks/
-│   └── data_cleaning.ipynb
+│   ├── 01_extraction.ipynb
+│   ├── 02_cleaning.ipynb
+│   ├── 03_eda.ipynb
+│   ├── 04_statistical_analysis.ipynb
+│   └── 05_final_load.ipynb
 │
 ├── dashboards/
 │   ├── dashboard1_demographics.twbx
 │   ├── dashboard2_conditions.twbx
 │   └── dashboard3_operations.twbx
 │
-├── presentation/
-│   └── healthify_final_presentation.pptx
+├── tableau/
+│   ├── screenshots/
+│   │
+│   ├── cleaned_data.csv
+│   ├── age_kpi.csv
+│   ├── risk_kpi.csv
+│   ├── condition_kpi.csv
+│   ├── stay_kpi.csv
+│   ├── discharge_kpi.csv
+│   └── dashboard_links.md
 │
-└── README.md
+├── reports/
+│   ├── Healthify_PPT.pdf
+│   ├── Healthify_Report.pdf
+│   ├── presentation_outline.md
+│   └── project_report_template.md
+│
+├── README.md
+└── requirements.txt
 ```
 
 ---
