@@ -34,7 +34,7 @@
 
 ## Business Problem
 
-Healthcare organizations generate large volumes of patient and hospital data, but decision-makers often lack clear insights into admission trends, treatment costs, and patient demographics. This project analyzes healthcare data to identify patterns in admissions, billing, and medical conditions to support data-driven hospital management.
+Hospital readmissions within 30 days increase costs and indicate gaps in patient care. This project analyzes patient data to identify key factors driving 30-day readmissions, including health conditions, demographics, and treatment patterns.
 
 ### Core Business Question
 Which medical conditions, hospitals, and patient groups drive the highest admissions and billing costs?
